@@ -31,7 +31,7 @@ has equivalent procedures for Mac OS X and Windows found at [docs.docker.com](do
 docker run -it --rm -v $(pwd)/images:/code/images -v $(pwd)/odm_orthophoto:/code/odm_orthophoto -v $(pwd)/odm_texturing:/code/odm_texturing opendronemap/opendronemap
 ```
 
-## User Interface
+### User Interface
 
 A web interface and API to OpenDroneMap is also available in the [WebODM](https://github.com/OpenDroneMap/WebODM) repository.
 
