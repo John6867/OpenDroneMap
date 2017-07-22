@@ -1,5 +1,3 @@
-# OpenDroneMap
-
 ![](https://raw.githubusercontent.com/OpenDroneMap/OpenDroneMap/master/img/odm_image.png)
 
 ## What is it?
@@ -32,6 +30,11 @@ has equivalent procedures for Mac OS X and Windows found at [docs.docker.com](do
 ```
 docker run -it --rm -v $(pwd)/images:/code/images -v $(pwd)/odm_orthophoto:/code/odm_orthophoto -v $(pwd)/odm_texturing:/code/odm_texturing opendronemap/opendronemap
 ```
+
+## User Interface
+
+A web interface and API to OpenDroneMap is also available in the [WebODM](https://github.com/OpenDroneMap/WebODM) repository.
+
 
 ### Native Install (Ubuntu 14.04 or later)
 
@@ -178,11 +181,7 @@ To pass in custom parameters to the run.py script, simply pass it as arguments t
 If you want to pass in custom parameters using the settings.yaml file, you can pass it as a -v volume binding:
 
     docker run -it --rm -v $(pwd)/images:/code/images v $(pwd)/odm_orthophoto:/code/odm_orthophoto -v $(pwd)/odm_texturing:/code/odm_texturing -v $(pwd)/settings.yaml:/code/settings.yaml opendronemap/opendronemap
-
-
-## User Interface
-
-A web interface and API to OpenDroneMap is currently under active development in the [WebODM](https://github.com/OpenDroneMap/WebODM) repository.
+    
 
 ## Video Support
 
